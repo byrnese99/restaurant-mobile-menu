@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Restaurant App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="menu">
+            <header>
+                <div class="header-text-wrap">
+                    <h1 class="header-text">Evan's Takeout</h1>
+                    <p class="header-text">The best burgers and pizza in town.</p>
+                </div>
+            </header>
+            <main>
+            </main>
+            <section class="checkout-section">
+                <h2 class="checkout-header">Your Order</h2>
+                <div class="order-container">
+                    <ul class="ordered-items">
+                    </ul>
+                </div>
+                <div class="total-container">
+                    <div class="order-total">
+                        <p>Total price:</p>
+                        <p class="total-price"></p>
+                    </div>
+                </div>
+                <button class="complete-order-btn green-btn" id="complete-order-btn">Complete order</button>
+            </section>
+            <p class="payment-message">Thanks! Your order is on its way!</p>
+        </section>
+        <section class="payment-modal">
+            <p class="modal-title">Enter card details</p>
+            <form class="payment-inputs">
+                <input type="text" name="name-input" class="input-box" placeholder="Enter your name" required>
+                <input type="text" minlength="16" maxlength="16" name="card-number" class="input-box" placeholder="Enter card number" required>
+                <input type="text" minlength="3" maxlength="3" name="ccv-number" class="input-box" placeholder="Enter CCV" required>
+                <button class="pay-btn green-btn" id="pay-btn" type="submit">Pay</button>
+            </form>
+        </section>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
